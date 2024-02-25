@@ -5,9 +5,15 @@ body{
     background-color: #f4f4f4;
     font-size: auto;
 }
+h1 ,p{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 ul{
     list-style: none;
     display: flex;
+    margin: 0;
+    padding: 0;
 }
 ul li{
     padding: 0 6px;
@@ -17,6 +23,7 @@ ul li a{
     color: #fff;
     font-size: 1.2em;
 }
+
 .icons{
     height: 25px;
     width: auto;
@@ -42,6 +49,29 @@ ul li a{
     justify-content: space-between;
     align-items: center;
     width: 40%;
+}
+
+.bgsection{
+    min-height: 90%;
+    background-image: url(images/logo.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.section2{
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+    padding: 0 10%;
+}
+.section2-content{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    margin-right: 30px;
+    border-radius: 7px;
 }
 
 
