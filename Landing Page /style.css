@@ -1,20 +1,40 @@
-body{
+body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
     font-size: auto;
-
     font-family: "Kode Mono", monospace;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
 }
-h1 ,p{
+
+h1, p {
     text-align: center;
 }
-span{
+
+span {
     font-size: x-large;
     animation: fadeSlightLR 1s ease-in-out;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    span {
+        font-size: large;
+    }
 }
 @keyframes fadeSlightLR {
     0% {
@@ -26,29 +46,46 @@ span{
         transform: translateX(20px);
     }
 }
-ul{
+ul {
     list-style: none;
     display: flex;
     margin: 0;
     padding: 0;
 }
-ul li{
+
+ul li {
     padding: 0 6px;
 }
-ul li a{
+
+ul li a {
     text-decoration: none;
     color: #fff;
     font-size: 1.2em;
 }
-strong{
+
+strong {
     font-size: 1.3em;
     color: #2c0b0b;
 }
-.icons{
+
+.icons {
     height: 25px;
     width: auto;
 }
-.header{
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    ul {
+        flex-direction: row;
+        align-items: center;
+        margin-right: 10px;
+    }
+
+    ul li {
+        padding: 6px 0;
+    }
+}
+.header {
     min-height: 10%;
     min-width: auto;
     background-color: #8754ba;
@@ -57,21 +94,40 @@ strong{
     align-items: center;
     padding: 0 3%;
 }
-#header1{
+
+#header1 {
     display: flex;
     align-items: center;
 }
-#header2{
+
+#header2 {
     margin: 0;
     padding: 0 3%;
     background-color: #b70ed5b2;
 }
-.logo{
+
+.logo {
     height: 50%;
     width: 10%;
     border-radius: 30%;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
     animation: fadeSlightLR 1s ease-in-out;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        padding: 3% 0;
+    }
+
+    #header1 {
+        margin-bottom: 10px;
+    }
+
+    .logo {
+        width: 20%;
+    }
 }
 @keyframes fadeSlightRL {
     0% {
@@ -119,6 +175,17 @@ strong{
     padding: 0 10% 5%;
     animation: fadeIn 1s ease-in-out;
 }
+
+@media screen and (max-width: 768px) {
+    .links ul {
+        width: 100%;
+    }
+
+    .section1,
+    .section2 {
+        padding: 0 5%;
+    }
+}
 @keyframes fadeOut {
     0% {
         opacity: 0;
@@ -150,6 +217,13 @@ strong{
     animation: slideInRight 1s ease-in-out;
 }
 
+@media screen and (max-width: 768px) {
+    .section2-content {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
 @keyframes slideInRight {
     0% {
         opacity: 0;
@@ -161,6 +235,53 @@ strong{
     }
 }
 
+.links ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+    animation: fadeSlightRL 1s ease-in-out;
+}
+
+.bgsection {
+    min-height: 100%;
+    background-image: url(images/bg1.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.section1 {
+    min-height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 10%;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.section2 {
+    min-height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+    padding: 0 10% 5%;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.section2-content {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    margin-right: 30px;
+    border-radius: 7px;
+    background-image: url(images/bg2.jpg);
+    padding: 10px;
+    animation: slideInRight 1s ease-in-out;
+}
+
 .section3 {
     min-height: 60%;
     padding: 0 10%;
@@ -169,34 +290,9 @@ strong{
     align-items: center;
     text-align: end;
     animation: fadeIn 1s ease-in-out;
-    
 }
-.section2{
-    min-height: 40%;
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    flex-direction: row;
-    text-align: center;
-    padding: 0 10% 5%;
-}
-.section2-content{
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
-    margin-right: 30px;
-    border-radius: 7px;
-    background-image: url(images/bg2.jpg);
-    padding: 10px;
-}
-.section3{
-    min-height: 60%;
-    padding: 0 10%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: end;
-    background-image: url(images/bg2.jpg);
-}
-.section4{
+
+.section4 {
     min-height: 20%;
     padding: 0 10%;
     display: flex;
@@ -206,5 +302,56 @@ strong{
     text-align: center;
     color: antiquewhite;
     background-color: #2a2323;
-    box-shadow: 0 0 10px rgba(45, 41, 41 , 0.5);
+    box-shadow: 0 0 10px rgba(45, 41, 41, 0.5);
+}
+
+@media screen and (max-width: 768px) {
+    .links ul {
+        width: 100%;
+    }
+
+    .section1,
+    .section2,
+    .section3,
+    .section4 {
+        padding: 0 5%;
+    }
+
+    .section2-content {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 0;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(20px);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
