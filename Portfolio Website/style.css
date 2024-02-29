@@ -5,34 +5,126 @@ body {
     font-weight: 400;
     font-style: normal;
 }
-header{
-    height: 10vh;
-    width: 100%;
-    margin-left: 30px;
-    margin-right: 30px;   
-    background-color: #f8f9fa;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
+
+h1 {
+    margin: 0;
 }
-.logo{
-    font-size: larger;
-}
-header nav {
-    display: flex;
+
+.ul {
     list-style: none;
-    justify-content: space-between;
-    align-items: center;
-}
-header nav ul {
     display: flex;
-    list-style: none;
-    justify-content: center;
     align-items: center;
-    
+    margin-right: 10px;
 }
-header nav ul li a{
-    margin: 0 30px;
+
+b {
+    color: blueviolet;
+}
+
+a {
+    margin: 0 20px;
     text-decoration: none;
 }
-header nav ul li a:hover{
-    color: #007bff;
+
+span {
+    font-size: xx-large;
+    font-weight: 600;
+    color: blueviolet;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 7%;
+    padding-right: 7%;
+    background-color: rgb(135, 205, 205);
+}
+
+.homeH,
+.ProjectsH,
+.ContactH {
+    margin: 0 20px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.homeH :hover,
+.ProjectsH :hover,
+.ContactH :hover {
+    background-color: rgb(108, 233, 233);
+    border-radius: 10px;
+    color: white;
+    height: 25px;
+    width: 80px;
+    text-align: center;
+}
+
+/* write after */
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 300vh;
+    background-color: rgb(126, 174, 174);
+}
+
+/* Home section */
+#home {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(60, 182, 182);
+}
+
+.home {
+    font-size: x-large;
+    width: 50%;
+    margin-left: 60px;
+}
+
+.heading {
+    width: 80%;
+    margin-bottom: 10%;
+    margin-left: 5%;
+}
+
+.image {
+    width: 50%;
+}
+
+.image img {
+    height: 90%;
+    width: 90%;
+
+}
+
+/* Projects Section */
+#Projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(80, 106, 106);
+}
+.Projects{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgb(80, 106, 106);
+}
+
+/* Contact Section */
+#Contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(55, 86, 86);
 }
