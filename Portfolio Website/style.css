@@ -47,11 +47,13 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 90vh;
 }
 
 header {
     display: flex;
+    position: fixed;
+    width: 90%;
     justify-content: space-between;
     padding-left: 7%;
     padding-right: 7%;
@@ -60,7 +62,7 @@ header {
 
 .HeaderLinks {
     margin: 0 10px;
-    height: 40px;
+    height: 12vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -87,6 +89,7 @@ main {
 /* Home section */
 #home {
     background-color: rgb(60, 182, 182);
+    height: 112vh;
 }
 
 .home {
@@ -298,5 +301,5 @@ footer {
     background-color: rgb(66, 37, 37);
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 }
