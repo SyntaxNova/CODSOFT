@@ -1,0 +1,27 @@
+body{
+    background-color: aqua
+}
+.row button{
+    background-color: red;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px;
+    max-height: 40px;
+    max-width: 40px;
+}
+.row{
+    justify-content: center;
+}
+.row button:hover{
+    background-color: green;
+}
+.row input{
+    padding: 10px 10px;
+    border-radius: 10px;
+    border: none;
+    margin: 10px;
+    max-height: 40px;
+    max-width: 100%;
+}
